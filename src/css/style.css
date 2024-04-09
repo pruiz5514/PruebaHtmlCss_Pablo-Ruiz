@@ -1,3 +1,7 @@
+/* Nombre Completo: Pablo Andres Ruiz Arias
+Clan: DELL
+fecha: 09/04/2024 */
+
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 :root{
@@ -22,6 +26,9 @@ header{
     display: flex;
     width: 100%;
     height: 100px;
+    background-color: #ffffffff;
+    position: sticky;
+    top: 0;
 }
 
 /* Estilos de la seccion izquierda del header */
@@ -89,14 +96,14 @@ header{
 .lista-nav li a{
     text-decoration: none;
     color: var(--azul-oscuro);
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .button-header{
     width: 150px;
     height: 50px;
     border: none;
-    font-size: 20px;
+    font-size: 18px;
     color: var(--blanco);
     background-color: var(--azul-claro);
     border-radius: 30px;
@@ -105,14 +112,293 @@ header{
 /* Estilos del main */
 
 main{
-    width: 90%;
+    width: 85%;
     height: auto;
     margin: 0 auto;
     padding: 40px 0; 
 }
 
-.locationSection-container{
+/* Estilos de las 3 secciones que contienen imagenes   */
+.section-container{
+    display: flex;
+    width: 100%;
+    height: 800px;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+.leftLocationSection-container, .rightSection-container{
+    display: flex;
+    flex-direction: column;
+    width: 49%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+h2{
+    font-size: 54px;
+    color: var(--azul-oscuro);
+    font-style: italic;
+    text-align: center;
+}
+
+/* Estilos del formulario de ubicacion */
+.locationForm{
+    display: flex;
+    padding-top: 30px;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.locationInput-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.input-location{
+    width: 80%;
+    height: 60px;
+    padding: 0 10px;
+    border: 1px solid var(--azul-claro);
+    background-color:#ffffffff;
+    border-radius: 9px;
+    font-size: 18px;
+}
+
+.imgSection-container{
+    display: flex;
+    justify-content: center;
+    width: 49%;
+    height: 100%;
+}
+
+.imgSection{
+    width: 80%;
+    border-radius: 50px;
+}
+
+.location-button{
+    width: 400px;
+    height: 60px;
+    border: 1px solid var(--azul-oscuro);
+    background-color: var(--azul-claro);
+    color: var(--blanco);
+    border-radius: 30px;
+    font-size: 18px;
+}
+
+.leftImgSection-container{
+    display: flex;
+    justify-content: center;
+    width: 49%;
+    height: 100%;
+}
+
+.rightSection-container p{
+    margin-top: 15px;
+    font-size: 24px;
+}
+
+.viajaText-container{
+    padding-top: 15px;
+    padding-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+/* Estilos de la tabla */
+table{
+    width: 80%;
+    text-align: center;
+}
+
+th{
+    border-bottom: 3px solid var(--azul-claro);
+}
+
+/* Estilos de la seccion de requerimientos */
+.requerimientos-container{
+    width: 100%;
+    height: auto;
+    padding-bottom: 50px;
+}
+
+.requerimientosText-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.requerimientos-img{
+    width: 47%;
+    border-radius: 50px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.requerimientosCards-container{
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+}
+
+/* Estilos de las cartas */
+.cards{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 170px;
+    align-items: center;
+    text-align: center;
+    gap: 8px;
+}
+
+.cards i{
+    font-size: 34px;
+    color: var(--azul-claro);
+}
+
+h4{
+    font-size: 20px;
+}
+
+.textCard{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: gray;
+}
+
+/* Estilos del formulario de registros */
+.registro-container{
+    width: 100%;
+    height: auto;
+}
+
+.registro-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.registro-container h3{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.registro-form input, select {
+    width: 50%;
+    height: 55px;
+    padding: 0 10px;
+    border: 1px solid var(--azul-claro);
+    background-color: #ffffffff;
+    border-radius: 9px;
+    font-size: 18px;
+}
+
+.registro-form textarea{
+    width: 50%;
+    height: 200px;
+    padding: 0 10px;
+    border: 1px solid var(--azul-claro);
+    background-color: #ffffffff;
+    border-radius: 9px;
+    font-size: 18px;
+    resize: none;
+}
+
+.registro-button{
+    width: 400px;
+    height: 40px;
+    border: 1px solid var(--azul-oscuro);
+    background-color: var(--azul-claro);
+    color: var(--blanco);
+    border-radius: 30px;
+    font-size: 18px;
+}
+
+/* Estilos de la seccion de acerca de nosotros */
+.nosotros-container{
+    width: 100%;
+    height: auto;
+}
+
+.media-container{
+    display: flex;
     width: 100%;
     height: 500px;
-    background-color: antiquewhite;
+    padding-top: 30px;
+}
+
+.videoMap-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+.videoMap-container h4{
+    margin-bottom: 20px;
+}
+
+.mapVideo{
+    width: 80%;
+    height: 416px;
+}
+
+/* Estilos del boton de wpp */
+.wpp{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: fixed;
+    right: 40px;
+    bottom: 100px;
+}
+
+button{
+    cursor: pointer;
+}
+
+/* Estilos del footer */
+footer{
+    width: 100%;
+    height: 120px;
+    background-color: var(--azul-claro);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-footer{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.social-footer li a{
+    text-decoration: none;
+    color: var(--blanco);
+    font-size: 30px;
+}
+
+.texto-footer{
+    color: var(--blanco);
+    font-size: 20px;
+}
+
+.riwi{
+    color: var(--azul-oscuro);
 }
