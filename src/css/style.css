@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root{
+    --azul-oscuro: #181E4B;
+    --azul-claro: #6b5cff;
+    --blanco: #F9FAFC;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: "Ubuntu", sans-serif;
+}
+
+/* Estilos del header */
+
+header{
+    display: flex;
+    width: 100%;
+    height: 100px;
+}
+
+/* Estilos de la seccion izquierda del header */
+.leftHeader-container{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.title-container{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.title-container h1{
+    font-size: 52px;
+    font-style: italic;
+    color: var(--azul-oscuro);
+}
+
+.letra{
+    color: var(--azul-claro);
+}
+
+.signoMenor{
+    display: flex;
+    background-image: url('./../../public/img/icons/menor.webp');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 40px;
+}
+
+.signoMayor{
+    display: flex;
+    background-image: url('./../../public/img/icons/mayor.webp');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 40px;
+}
+
+/* Estilos de la seccion derecha del header */
+.rightHeader-container{
+    display: flex;
+    width: 60%;
+    height: 100%;
+    align-items: center;
+    justify-content: end;
+    gap: 50px;
+    padding-right: 80px;
+}
+
+.lista-nav{
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.lista-nav li a{
+    text-decoration: none;
+    color: var(--azul-oscuro);
+    font-size: 20px;
+}
+
+.button-header{
+    width: 150px;
+    height: 50px;
+    border: none;
+    font-size: 20px;
+    color: var(--blanco);
+    background-color: var(--azul-claro);
+    border-radius: 30px;
+}
+
+/* Estilos del main */
+
+main{
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    padding: 40px 0; 
+}
+
+.locationSection-container{
+    width: 100%;
+    height: 500px;
+    background-color: antiquewhite;
+}
